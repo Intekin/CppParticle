@@ -18,6 +18,8 @@
 *.lastbuildstate
 *.ipch
 *.idb
+*.opendb
+
 
 # Compiled Dynamic libraries
 *.so
