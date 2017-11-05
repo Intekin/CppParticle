@@ -7,6 +7,10 @@ namespace firefly {
 	public:
 		double m_x;
 		double m_y;
+
+		double xspeed;
+		double yspeed;
+
 	public:
 		Particle();
 		~Particle();

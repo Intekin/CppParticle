@@ -30,7 +30,8 @@ int main()
 		int elapsed = SDL_GetTicks();
 
 		//Particle location update
-		swarm.update();
+		screen.Clear();
+		swarm.Update();
 
 		//draw particles
 		const Particle * const pParticles = swarm.getParticles();

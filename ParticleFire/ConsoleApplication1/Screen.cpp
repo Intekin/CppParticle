@@ -42,6 +42,8 @@ namespace firefly {
 
 		m_buffer = new Uint32[WINDOW_WIDTH * WINDOW_HEIGHT];
 
+		memset(m_buffer, 0, WINDOW_WIDTH * WINDOW_HEIGHT * sizeof(Uint32));
+
 		return true;
 	}
 
@@ -52,7 +54,11 @@ namespace firefly {
 			}
 		}
 		return true;
-	}	
+	}
+
+	void Screen::Clear() {
+		memset(m_buffer, 0, WINDOW_WIDTH * WINDOW_HEIGHT * sizeof(Uint32));
+	}
 
 	void Screen::SetPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
 

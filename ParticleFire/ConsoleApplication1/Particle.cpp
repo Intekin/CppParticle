@@ -8,6 +8,9 @@ namespace firefly {
 	{
 		m_x = ((2.0 * rand()) / RAND_MAX) - 1;
 		m_y = ((2.0 * rand()) / RAND_MAX) - 1;
+
+		xspeed = 0.001 * (((2.0 * rand()) / RAND_MAX) - 1);
+		yspeed = 0.001 * (((2.0 * rand()) / RAND_MAX) - 1);
 	}
 
 
@@ -17,9 +20,15 @@ namespace firefly {
 
 
 	void Particle::update() {
-		const double speed = 0.01;
+		m_x += xspeed;
+		m_y += yspeed;
 
-		m_x += speed;
-		m_y += speed;
+		if (m_x <= -1.0 || m_x >= 1.0) {
+			xspeed = -xspeed;
+		}
+		
+		if (m_y <= -1.0 || m_y >= 1.0) {
+			yspeed = -yspeed;
+		}
 	}
 }

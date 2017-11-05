@@ -14,7 +14,7 @@ namespace firefly {
 	{
 	}
 
-	void Swarm::update() {
+	void Swarm::Update() {
 		for (int i = 0; i < Swarm::NPARTICLES; i++) {
 			m_particles[i].update();
 		}
