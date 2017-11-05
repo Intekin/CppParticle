@@ -1,0 +1,9 @@
+﻿  Swarm.cpp
+  Particle.cpp
+  ConsoleApplication1.cpp
+d:\vc++ projects\particlefire\consoleapplication1\consoleapplication1.cpp(18): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\vc++ projects\particlefire\consoleapplication1\consoleapplication1.cpp(39): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\vc++ projects\particlefire\consoleapplication1\consoleapplication1.cpp(40): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  ConsoleApplication1.vcxproj -> D:\VC++ Projects\ParticleFire\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> D:\VC++ Projects\ParticleFire\Debug\ConsoleApplication1.pdb (Partial PDB)
