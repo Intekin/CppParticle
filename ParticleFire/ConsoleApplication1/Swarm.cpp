@@ -4,7 +4,7 @@
 // populate particles and various functions related to it.
 namespace firefly {
 
-	Swarm::Swarm()
+	Swarm::Swarm(): lastTime(0)
 	{
 		m_particles = new Particle[NPARTICLES];
 	}
@@ -14,9 +14,14 @@ namespace firefly {
 	{
 	}
 
-	void Swarm::Update() {
+	void Swarm::Update(int elapsed) {
+
+		int interval = elapsed - lastTime;
+
 		for (int i = 0; i < Swarm::NPARTICLES; i++) {
-			m_particles[i].update();
+			m_particles[i].Update(interval);
 		}
+
+		lastTime = elapsed;
 	}
 }

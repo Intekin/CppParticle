@@ -5,16 +5,16 @@ namespace firefly {
 	class Particle
 	{
 	public:
-		double m_x;
-		double m_y;
+		float m_x;
+		float m_y;
 
-		double xspeed;
-		double yspeed;
+		float m_speed;
+		float m_direction;
 
 	public:
 		Particle();
 		~Particle();
-		void update();
+		void Update(int interval);
 	};
 }
 

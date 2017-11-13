@@ -11,7 +11,7 @@
 #undef main
 
 using namespace std;
-using namespace firefly;
+using namespace firefly; //Just testing the function of creating custom namespaces
 
 int main()
 {
@@ -31,16 +31,16 @@ int main()
 
 		//Particle location update
 		screen.Clear();
-		swarm.Update();
+		swarm.Update(elapsed);
 
 		//draw particles
 		const Particle * const pParticles = swarm.getParticles();
 
-		for (int i = 0; i < Swarm::NPARTICLES; i++) {
+		for (int i = 0; i < swarm.NPARTICLES; i++) {
 			Particle particle = pParticles[i];
 
 			int x = (particle.m_x + 1) * Screen::WINDOW_WIDTH / 2;
-			int y = (particle.m_y + 1) * Screen::WINDOW_HEIGHT / 2;
+			int y = particle.m_y * Screen::WINDOW_WIDTH / 2 + Screen::WINDOW_HEIGHT / 2;
 
 			screen.SetPixel(x, y, 128, 128, 128); //default coloring for testing
 
