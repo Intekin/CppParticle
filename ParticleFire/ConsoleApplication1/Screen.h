@@ -1,6 +1,8 @@
 #pragma once
 #include "SDL.h"
 
+//Screen class: Holds the Screen settings
+
 namespace firefly {
 
 	class Screen

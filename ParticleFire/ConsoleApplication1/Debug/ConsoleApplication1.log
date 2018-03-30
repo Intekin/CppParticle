@@ -1,6 +1,15 @@
-﻿  Particle.cpp
-d:\git\cppparticle\particlefire\consoleapplication1\particle.cpp(11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-d:\git\cppparticle\particlefire\consoleapplication1\particle.cpp(22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-d:\git\cppparticle\particlefire\consoleapplication1\particle.cpp(23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+﻿  Skipping... (no relevant changes detected)
+  stdafx.cpp
+  ConsoleApplication1.cpp
+d:\git\cppparticle\particlefire\consoleapplication1\consoleapplication1.cpp(18): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\git\cppparticle\particlefire\consoleapplication1\consoleapplication1.cpp(42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\git\cppparticle\particlefire\consoleapplication1\consoleapplication1.cpp(43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  Compiling...
+  Screen.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Particle.cpp
+  Swarm.cpp
   ConsoleApplication1.vcxproj -> D:\Git\CppParticle\ParticleFire\Debug\ConsoleApplication1.exe
   ConsoleApplication1.vcxproj -> D:\Git\CppParticle\ParticleFire\Debug\ConsoleApplication1.pdb (Partial PDB)
