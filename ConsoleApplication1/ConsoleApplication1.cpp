@@ -10,16 +10,13 @@
 
 #undef main
 
-using namespace std;
-using namespace firefly;
-
 int main()
 {
 	srand(time(NULL));
 	Screen screen;
 
 	if (!screen.Init())
-		cout << "SDL fucked up";
+		std::cout << "SDL fucked up";
 
 	Swarm swarm;
 	while (true) {
